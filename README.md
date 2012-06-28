@@ -1,4 +1,4 @@
 lest
 ====
 
-A little http server without fully functional.
+A little http server provides limited functionality in linux.
