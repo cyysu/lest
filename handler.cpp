@@ -193,7 +193,7 @@ void CHandler::DoCGI(char *vFileName)
 		close(fd[1]);
 
 		wait(NULL);
-		return;
+		exit(0);
 	}
 	
 	// 子进程
@@ -221,6 +221,8 @@ void CHandler::DoCGI(char *vFileName)
 		SendError(500, "Internal Error", "Something unexpected went wrong execute file.");
 		exit(0);
 	}
+
+	exit(0);
 }
 
 void CHandler::DoFile(char *vFileName)
@@ -264,11 +266,13 @@ void CHandler::DoFile(char *vFileName)
 	{
 		SendMsg(filebuffer, len);
 	}
+	exit(0);
 }
 
 void CHandler::DoDir(char *vDirName)
 {
 	SendError(501, "Not Implemented", "Working with directory is not implemented.");
+	exit(0);
 }
 
 void CHandler::SetNonBlock()
@@ -318,6 +322,7 @@ void CHandler::SendError(int vErrorNum, const char *vTitle, const char *vText)
 	request.AddRequest(contentbuffer, contentlen);
 	SendMsg(request);
 	Close();
+	exit(0);
 }
 
 void CHandler::SendMsg(char *vBuffPtr, int vLeftLen)
