@@ -1,0 +1,190 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+AcceptHandler	listener.h	/^typedef void (*AcceptHandler)(int vAcceptFD);$/;"	t
+AddRequest	request.cpp	/^void CRequest::AddRequest(char *vBuffPtr, int vLen)$/;"	f	class:CRequest	signature:(char *vBuffPtr, int vLen)
+AddRequest	request.h	/^		void AddRequest(char *vBuffPtr, int vLen);$/;"	p	class:CRequest	access:public	signature:(char *vBuffPtr, int vLen)
+CC	Makefile	/^CC := g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS := -g$/;"	m
+CGI_PATTERN	handler.cpp	18;"	d	file:
+CHandler	handler.cpp	/^CHandler::CHandler(int vSocketFD)$/;"	f	class:CHandler	signature:(int vSocketFD)
+CHandler	handler.h	/^		CHandler(int vSocketFD);$/;"	p	class:CHandler	access:public	signature:(int vSocketFD)
+CHandler	handler.h	/^class CHandler$/;"	c
+CHandler::CHandler	handler.cpp	/^CHandler::CHandler(int vSocketFD)$/;"	f	class:CHandler	signature:(int vSocketFD)
+CHandler::CHandler	handler.h	/^		CHandler(int vSocketFD);$/;"	p	class:CHandler	access:public	signature:(int vSocketFD)
+CHandler::ChooseType	handler.cpp	/^char *CHandler::ChooseType(char *vFileName)$/;"	f	class:CHandler	signature:(char *vFileName)
+CHandler::ChooseType	handler.h	/^		char *ChooseType(char *vFileName);$/;"	p	class:CHandler	access:private	signature:(char *vFileName)
+CHandler::Close	handler.cpp	/^void CHandler::Close()$/;"	f	class:CHandler	signature:()
+CHandler::Close	handler.h	/^		void Close();$/;"	p	class:CHandler	access:private	signature:()
+CHandler::DoCGI	handler.cpp	/^void CHandler::DoCGI(char *vFileName)$/;"	f	class:CHandler	signature:(char *vFileName)
+CHandler::DoCGI	handler.h	/^		void DoCGI(char *vFileName);$/;"	p	class:CHandler	access:private	signature:(char *vFileName)
+CHandler::DoDir	handler.cpp	/^void CHandler::DoDir(char *vDirName)$/;"	f	class:CHandler	signature:(char *vDirName)
+CHandler::DoDir	handler.h	/^		void DoDir(char *vDirName);$/;"	p	class:CHandler	access:private	signature:(char *vDirName)
+CHandler::DoFile	handler.cpp	/^void CHandler::DoFile(char *vFileName)$/;"	f	class:CHandler	signature:(char *vFileName)
+CHandler::DoFile	handler.h	/^		void DoFile(char *vFileName);$/;"	p	class:CHandler	access:private	signature:(char *vFileName)
+CHandler::Handler	handler.cpp	/^void CHandler::Handler(int vSocketFD)$/;"	f	class:CHandler	signature:(int vSocketFD)
+CHandler::Handler	handler.h	/^		static void Handler(int vSocketFD);$/;"	p	class:CHandler	access:public	signature:(int vSocketFD)
+CHandler::ReadTimeout	handler.cpp	/^void CHandler::ReadTimeout(int vSigNum)$/;"	f	class:CHandler	signature:(int vSigNum)
+CHandler::ReadTimeout	handler.h	/^		static void ReadTimeout(int vSigNum);$/;"	p	class:CHandler	access:private	signature:(int vSigNum)
+CHandler::RecvMsg	handler.cpp	/^int CHandler::RecvMsg()$/;"	f	class:CHandler	signature:()
+CHandler::RecvMsg	handler.h	/^		int RecvMsg();$/;"	p	class:CHandler	access:private	signature:()
+CHandler::SendError	handler.cpp	/^void CHandler::SendError(int vErrorNum, const char *vTitle, const char *vText)$/;"	f	class:CHandler	signature:(int vErrorNum, const char *vTitle, const char *vText)
+CHandler::SendError	handler.h	/^		void SendError(int vErrorNum, const char *vTitle, const char *vText);$/;"	p	class:CHandler	access:private	signature:(int vErrorNum, const char *vTitle, const char *vText)
+CHandler::SendMsg	handler.cpp	/^void CHandler::SendMsg(CRequest &vRequest)$/;"	f	class:CHandler	signature:(CRequest &vRequest)
+CHandler::SendMsg	handler.cpp	/^void CHandler::SendMsg(char *buffptr, int leftlen)$/;"	f	class:CHandler	signature:(char *buffptr, int leftlen)
+CHandler::SendMsg	handler.h	/^		void SendMsg(CRequest &vRequest);$/;"	p	class:CHandler	access:private	signature:(CRequest &vRequest)
+CHandler::SendMsg	handler.h	/^		void SendMsg(char *buffptr, int leftlen);$/;"	p	class:CHandler	access:private	signature:(char *buffptr, int leftlen)
+CHandler::SetNonBlock	handler.cpp	/^void CHandler::SetNonBlock()$/;"	f	class:CHandler	signature:()
+CHandler::SetNonBlock	handler.h	/^		void SetNonBlock();$/;"	p	class:CHandler	access:private	signature:()
+CHandler::mHandler	handler.cpp	/^CHandler *CHandler::mHandler = NULL;$/;"	m	class:CHandler	file:
+CHandler::mHandler	handler.h	/^		static CHandler *mHandler;$/;"	m	class:CHandler	access:private
+CHandler::mHttpHeader	handler.h	/^		CHttpHeader mHttpHeader;$/;"	m	class:CHandler	access:private
+CHandler::mRequest	handler.h	/^		CRequest mRequest;$/;"	m	class:CHandler	access:private
+CHandler::mSocketFD	handler.h	/^		int mSocketFD;$/;"	m	class:CHandler	access:private
+CHandler::~CHandler	handler.cpp	/^CHandler::~CHandler()$/;"	f	class:CHandler	signature:()
+CHandler::~CHandler	handler.h	/^		~CHandler();$/;"	p	class:CHandler	access:public	signature:()
+CHttpHeader	httpheader.cpp	/^CHttpHeader::CHttpHeader()$/;"	f	class:CHttpHeader	signature:()
+CHttpHeader	httpheader.h	/^		CHttpHeader();$/;"	p	class:CHttpHeader	access:public	signature:()
+CHttpHeader	httpheader.h	/^class CHttpHeader$/;"	c
+CHttpHeader::CHttpHeader	httpheader.cpp	/^CHttpHeader::CHttpHeader()$/;"	f	class:CHttpHeader	signature:()
+CHttpHeader::CHttpHeader	httpheader.h	/^		CHttpHeader();$/;"	p	class:CHttpHeader	access:public	signature:()
+CHttpHeader::DecodePath	httpheader.cpp	/^void CHttpHeader::DecodePath()$/;"	f	class:CHttpHeader	signature:()
+CHttpHeader::DecodePath	httpheader.h	/^		void DecodePath();$/;"	p	class:CHttpHeader	access:private	signature:()
+CHttpHeader::GetContentLength	httpheader.h	/^		int GetContentLength() { return mContentLength; }$/;"	f	class:CHttpHeader	access:public	signature:()
+CHttpHeader::GetHttpData	httpheader.h	/^		char *GetHttpData() { return mHttpData; }$/;"	f	class:CHttpHeader	access:public	signature:()
+CHttpHeader::GetMethod	httpheader.h	/^		inline EMethod GetMethod() { return mEMethod; }$/;"	f	class:CHttpHeader	access:public	signature:()
+CHttpHeader::GetPath	httpheader.h	/^		inline char *GetPath() { return mPath; }$/;"	f	class:CHttpHeader	access:public	signature:()
+CHttpHeader::GetProtocol	httpheader.h	/^		inline char *GetProtocol() { return mProtocol; }$/;"	f	class:CHttpHeader	access:public	signature:()
+CHttpHeader::GetQuery	httpheader.h	/^		inline char *GetQuery() { return mQuery; }$/;"	f	class:CHttpHeader	access:public	signature:()
+CHttpHeader::Hexit	httpheader.cpp	/^int CHttpHeader::Hexit(char c)$/;"	f	class:CHttpHeader	signature:(char c)
+CHttpHeader::Hexit	httpheader.h	/^		int Hexit(char c);$/;"	p	class:CHttpHeader	access:private	signature:(char c)
+CHttpHeader::Parse	httpheader.cpp	/^int CHttpHeader::Parse(CRequest &vRequest)$/;"	f	class:CHttpHeader	signature:(CRequest &vRequest)
+CHttpHeader::Parse	httpheader.h	/^		int Parse(CRequest &vRequest);$/;"	p	class:CHttpHeader	access:public	signature:(CRequest &vRequest)
+CHttpHeader::ParseMethod	httpheader.cpp	/^EMethod CHttpHeader::ParseMethod()$/;"	f	class:CHttpHeader	signature:()
+CHttpHeader::ParseMethod	httpheader.h	/^		EMethod ParseMethod();$/;"	p	class:CHttpHeader	access:public	signature:()
+CHttpHeader::mContentLength	httpheader.h	/^		int mContentLength;$/;"	m	class:CHttpHeader	access:private
+CHttpHeader::mEMethod	httpheader.h	/^		EMethod mEMethod;$/;"	m	class:CHttpHeader	access:private
+CHttpHeader::mHttpData	httpheader.h	/^		char *mHttpData;$/;"	m	class:CHttpHeader	access:private
+CHttpHeader::mMethod	httpheader.h	/^		char *mMethod;$/;"	m	class:CHttpHeader	access:private
+CHttpHeader::mPath	httpheader.h	/^		char *mPath;$/;"	m	class:CHttpHeader	access:private
+CHttpHeader::mProtocol	httpheader.h	/^		char *mProtocol;$/;"	m	class:CHttpHeader	access:private
+CHttpHeader::mQuery	httpheader.h	/^		char *mQuery;$/;"	m	class:CHttpHeader	access:private
+CHttpHeader::~CHttpHeader	httpheader.cpp	/^CHttpHeader::~CHttpHeader()$/;"	f	class:CHttpHeader	signature:()
+CHttpHeader::~CHttpHeader	httpheader.h	/^		~CHttpHeader();$/;"	p	class:CHttpHeader	access:public	signature:()
+CListener	listener.cpp	/^CListener::CListener(AcceptHandler mHandler)$/;"	f	class:CListener	signature:(AcceptHandler mHandler)
+CListener	listener.h	/^		CListener(AcceptHandler vHandler);$/;"	p	class:CListener	access:public	signature:(AcceptHandler vHandler)
+CListener	listener.h	/^class CListener$/;"	c
+CListener::CListener	listener.cpp	/^CListener::CListener(AcceptHandler mHandler)$/;"	f	class:CListener	signature:(AcceptHandler mHandler)
+CListener::CListener	listener.h	/^		CListener(AcceptHandler vHandler);$/;"	p	class:CListener	access:public	signature:(AcceptHandler vHandler)
+CListener::Close	listener.cpp	/^void CListener::Close()$/;"	f	class:CListener	signature:()
+CListener::Close	listener.h	/^		void Close();$/;"	p	class:CListener	access:public	signature:()
+CListener::Listen	listener.cpp	/^int CListener::Listen(string vIP, unsigned short vPort)$/;"	f	class:CListener	signature:(string vIP, unsigned short vPort)
+CListener::Listen	listener.h	/^		int Listen(string vIP, unsigned short vPort);$/;"	p	class:CListener	access:public	signature:(string vIP, unsigned short vPort)
+CListener::Run	listener.cpp	/^void CListener::Run()$/;"	f	class:CListener	signature:()
+CListener::Run	listener.h	/^		void Run();$/;"	p	class:CListener	access:public	signature:()
+CListener::mAcceptHandler	listener.h	/^		AcceptHandler mAcceptHandler;$/;"	m	class:CListener	access:private
+CListener::mSocketFD	listener.h	/^		int mSocketFD;$/;"	m	class:CListener	access:private
+CListener::~CListener	listener.cpp	/^CListener::~CListener()$/;"	f	class:CListener	signature:()
+CListener::~CListener	listener.h	/^		~CListener();$/;"	p	class:CListener	access:public	signature:()
+CRequest	request.cpp	/^CRequest::CRequest()$/;"	f	class:CRequest	signature:()
+CRequest	request.h	/^		CRequest();	$/;"	p	class:CRequest	access:public	signature:()
+CRequest	request.h	/^class CRequest$/;"	c
+CRequest::AddRequest	request.cpp	/^void CRequest::AddRequest(char *vBuffPtr, int vLen)$/;"	f	class:CRequest	signature:(char *vBuffPtr, int vLen)
+CRequest::AddRequest	request.h	/^		void AddRequest(char *vBuffPtr, int vLen);$/;"	p	class:CRequest	access:public	signature:(char *vBuffPtr, int vLen)
+CRequest::CRequest	request.cpp	/^CRequest::CRequest()$/;"	f	class:CRequest	signature:()
+CRequest::CRequest	request.h	/^		CRequest();	$/;"	p	class:CRequest	access:public	signature:()
+CRequest::GetData	request.h	/^		inline char *GetData() { return mBuffPtr; }$/;"	f	class:CRequest	access:public	signature:()
+CRequest::GetLength	request.h	/^		inline int GetLength() { return mBuffLen; }$/;"	f	class:CRequest	access:public	signature:()
+CRequest::mBuffLen	request.h	/^		int mBuffLen;$/;"	m	class:CRequest	access:private
+CRequest::mBuffPtr	request.h	/^		char *mBuffPtr;$/;"	m	class:CRequest	access:private
+CRequest::~CRequest	request.cpp	/^CRequest::~CRequest()$/;"	f	class:CRequest	signature:()
+CRequest::~CRequest	request.h	/^		~CRequest();$/;"	p	class:CRequest	access:public	signature:()
+ChooseType	handler.cpp	/^char *CHandler::ChooseType(char *vFileName)$/;"	f	class:CHandler	signature:(char *vFileName)
+ChooseType	handler.h	/^		char *ChooseType(char *vFileName);$/;"	p	class:CHandler	access:private	signature:(char *vFileName)
+Close	handler.cpp	/^void CHandler::Close()$/;"	f	class:CHandler	signature:()
+Close	handler.h	/^		void Close();$/;"	p	class:CHandler	access:private	signature:()
+Close	listener.cpp	/^void CListener::Close()$/;"	f	class:CListener	signature:()
+Close	listener.h	/^		void Close();$/;"	p	class:CListener	access:public	signature:()
+DecodePath	httpheader.cpp	/^void CHttpHeader::DecodePath()$/;"	f	class:CHttpHeader	signature:()
+DecodePath	httpheader.h	/^		void DecodePath();$/;"	p	class:CHttpHeader	access:private	signature:()
+DoCGI	handler.cpp	/^void CHandler::DoCGI(char *vFileName)$/;"	f	class:CHandler	signature:(char *vFileName)
+DoCGI	handler.h	/^		void DoCGI(char *vFileName);$/;"	p	class:CHandler	access:private	signature:(char *vFileName)
+DoDir	handler.cpp	/^void CHandler::DoDir(char *vDirName)$/;"	f	class:CHandler	signature:(char *vDirName)
+DoDir	handler.h	/^		void DoDir(char *vDirName);$/;"	p	class:CHandler	access:private	signature:(char *vDirName)
+DoFile	handler.cpp	/^void CHandler::DoFile(char *vFileName)$/;"	f	class:CHandler	signature:(char *vFileName)
+DoFile	handler.h	/^		void DoFile(char *vFileName);$/;"	p	class:CHandler	access:private	signature:(char *vFileName)
+EMethod	httpheader.h	/^enum EMethod$/;"	g
+GetContentLength	httpheader.h	/^		int GetContentLength() { return mContentLength; }$/;"	f	class:CHttpHeader	access:public	signature:()
+GetData	request.h	/^		inline char *GetData() { return mBuffPtr; }$/;"	f	class:CRequest	access:public	signature:()
+GetHttpData	httpheader.h	/^		char *GetHttpData() { return mHttpData; }$/;"	f	class:CHttpHeader	access:public	signature:()
+GetLength	request.h	/^		inline int GetLength() { return mBuffLen; }$/;"	f	class:CRequest	access:public	signature:()
+GetMethod	httpheader.h	/^		inline EMethod GetMethod() { return mEMethod; }$/;"	f	class:CHttpHeader	access:public	signature:()
+GetPath	httpheader.h	/^		inline char *GetPath() { return mPath; }$/;"	f	class:CHttpHeader	access:public	signature:()
+GetProtocol	httpheader.h	/^		inline char *GetProtocol() { return mProtocol; }$/;"	f	class:CHttpHeader	access:public	signature:()
+GetQuery	httpheader.h	/^		inline char *GetQuery() { return mQuery; }$/;"	f	class:CHttpHeader	access:public	signature:()
+Handler	handler.cpp	/^void CHandler::Handler(int vSocketFD)$/;"	f	class:CHandler	signature:(int vSocketFD)
+Handler	handler.h	/^		static void Handler(int vSocketFD);$/;"	p	class:CHandler	access:public	signature:(int vSocketFD)
+Hexit	httpheader.cpp	/^int CHttpHeader::Hexit(char c)$/;"	f	class:CHttpHeader	signature:(char c)
+Hexit	httpheader.h	/^		int Hexit(char c);$/;"	p	class:CHttpHeader	access:private	signature:(char c)
+Listen	listener.cpp	/^int CListener::Listen(string vIP, unsigned short vPort)$/;"	f	class:CListener	signature:(string vIP, unsigned short vPort)
+Listen	listener.h	/^		int Listen(string vIP, unsigned short vPort);$/;"	p	class:CListener	access:public	signature:(string vIP, unsigned short vPort)
+METHOD_GET	httpheader.h	/^	METHOD_GET,$/;"	e	enum:EMethod
+METHOD_HEAD	httpheader.h	/^	METHOD_HEAD,$/;"	e	enum:EMethod
+METHOD_NONE	httpheader.h	/^	METHOD_NONE = 0,$/;"	e	enum:EMethod
+METHOD_POST	httpheader.h	/^	METHOD_POST$/;"	e	enum:EMethod
+OBJS	Makefile	/^OBJS := $(patsubst %cpp,%o,$(SRCS))$/;"	m
+Parse	httpheader.cpp	/^int CHttpHeader::Parse(CRequest &vRequest)$/;"	f	class:CHttpHeader	signature:(CRequest &vRequest)
+Parse	httpheader.h	/^		int Parse(CRequest &vRequest);$/;"	p	class:CHttpHeader	access:public	signature:(CRequest &vRequest)
+ParseMethod	httpheader.cpp	/^EMethod CHttpHeader::ParseMethod()$/;"	f	class:CHttpHeader	signature:()
+ParseMethod	httpheader.h	/^		EMethod ParseMethod();$/;"	p	class:CHttpHeader	access:public	signature:()
+READ_TIMEOUT	handler.cpp	17;"	d	file:
+ReadTimeout	handler.cpp	/^void CHandler::ReadTimeout(int vSigNum)$/;"	f	class:CHandler	signature:(int vSigNum)
+ReadTimeout	handler.h	/^		static void ReadTimeout(int vSigNum);$/;"	p	class:CHandler	access:private	signature:(int vSigNum)
+RecvMsg	handler.cpp	/^int CHandler::RecvMsg()$/;"	f	class:CHandler	signature:()
+RecvMsg	handler.h	/^		int RecvMsg();$/;"	p	class:CHandler	access:private	signature:()
+Run	listener.cpp	/^void CListener::Run()$/;"	f	class:CListener	signature:()
+Run	listener.h	/^		void Run();$/;"	p	class:CListener	access:public	signature:()
+SRCS	Makefile	/^SRCS := $(wildcard *.cpp)$/;"	m
+SendError	handler.cpp	/^void CHandler::SendError(int vErrorNum, const char *vTitle, const char *vText)$/;"	f	class:CHandler	signature:(int vErrorNum, const char *vTitle, const char *vText)
+SendError	handler.h	/^		void SendError(int vErrorNum, const char *vTitle, const char *vText);$/;"	p	class:CHandler	access:private	signature:(int vErrorNum, const char *vTitle, const char *vText)
+SendMsg	handler.cpp	/^void CHandler::SendMsg(CRequest &vRequest)$/;"	f	class:CHandler	signature:(CRequest &vRequest)
+SendMsg	handler.cpp	/^void CHandler::SendMsg(char *buffptr, int leftlen)$/;"	f	class:CHandler	signature:(char *buffptr, int leftlen)
+SendMsg	handler.h	/^		void SendMsg(CRequest &vRequest);$/;"	p	class:CHandler	access:private	signature:(CRequest &vRequest)
+SendMsg	handler.h	/^		void SendMsg(char *buffptr, int leftlen);$/;"	p	class:CHandler	access:private	signature:(char *buffptr, int leftlen)
+SetNonBlock	handler.cpp	/^void CHandler::SetNonBlock()$/;"	f	class:CHandler	signature:()
+SetNonBlock	handler.h	/^		void SetNonBlock();$/;"	p	class:CHandler	access:private	signature:()
+TARGET	Makefile	/^TARGET := lest$/;"	m
+TYPECHOOSER	handler.cpp	372;"	d	file:
+_HANDLER_H_	handler.h	2;"	d
+_HTTP_HEADER_H_	httpheader.h	2;"	d
+_LISTENER_H_	listener.h	2;"	d
+_REQUEST_H_	request.h	2;"	d
+mAcceptHandler	listener.h	/^		AcceptHandler mAcceptHandler;$/;"	m	class:CListener	access:private
+mBuffLen	request.h	/^		int mBuffLen;$/;"	m	class:CRequest	access:private
+mBuffPtr	request.h	/^		char *mBuffPtr;$/;"	m	class:CRequest	access:private
+mContentLength	httpheader.h	/^		int mContentLength;$/;"	m	class:CHttpHeader	access:private
+mEMethod	httpheader.h	/^		EMethod mEMethod;$/;"	m	class:CHttpHeader	access:private
+mHandler	handler.cpp	/^CHandler *CHandler::mHandler = NULL;$/;"	m	class:CHandler	file:
+mHandler	handler.h	/^		static CHandler *mHandler;$/;"	m	class:CHandler	access:private
+mHttpData	httpheader.h	/^		char *mHttpData;$/;"	m	class:CHttpHeader	access:private
+mHttpHeader	handler.h	/^		CHttpHeader mHttpHeader;$/;"	m	class:CHandler	access:private
+mMethod	httpheader.h	/^		char *mMethod;$/;"	m	class:CHttpHeader	access:private
+mPath	httpheader.h	/^		char *mPath;$/;"	m	class:CHttpHeader	access:private
+mProtocol	httpheader.h	/^		char *mProtocol;$/;"	m	class:CHttpHeader	access:private
+mQuery	httpheader.h	/^		char *mQuery;$/;"	m	class:CHttpHeader	access:private
+mRequest	handler.h	/^		CRequest mRequest;$/;"	m	class:CHandler	access:private
+mSocketFD	handler.h	/^		int mSocketFD;$/;"	m	class:CHandler	access:private
+mSocketFD	listener.h	/^		int mSocketFD;$/;"	m	class:CListener	access:private
+main	main.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+sigchld_hander	main.cpp	/^void sigchld_hander(int signum)$/;"	f	signature:(int signum)
+~CHandler	handler.cpp	/^CHandler::~CHandler()$/;"	f	class:CHandler	signature:()
+~CHandler	handler.h	/^		~CHandler();$/;"	p	class:CHandler	access:public	signature:()
+~CHttpHeader	httpheader.cpp	/^CHttpHeader::~CHttpHeader()$/;"	f	class:CHttpHeader	signature:()
+~CHttpHeader	httpheader.h	/^		~CHttpHeader();$/;"	p	class:CHttpHeader	access:public	signature:()
+~CListener	listener.cpp	/^CListener::~CListener()$/;"	f	class:CListener	signature:()
+~CListener	listener.h	/^		~CListener();$/;"	p	class:CListener	access:public	signature:()
+~CRequest	request.cpp	/^CRequest::~CRequest()$/;"	f	class:CRequest	signature:()
+~CRequest	request.h	/^		~CRequest();$/;"	p	class:CRequest	access:public	signature:()
