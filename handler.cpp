@@ -200,10 +200,11 @@ void CHandler::DoCGI(char *vFileName)
 	close(fd[1]);
 
 	// 设置环境变量
-	char buffer[100] = {0};			
+	char buffer[256] = {0};			
 	snprintf(buffer, sizeof(buffer), "CONTENT_LENGTH=%d", mHttpHeader.GetContentLength());
 	putenv(buffer);
-	setenv("QUERY_STRING", mHttpHeader.GetQuery(), 1);
+	snprintf(buffer, sizeof(buffer), "QUERY_STRING=%s", mHttpHeader.GetQuery());
+	putenv(buffer);
 
 	// 重定向文件描述符
 	if( dup2(mSocketFD, STDOUT_FILENO) < 0 || dup2(fd[0], STDIN_FILENO) < 0 )

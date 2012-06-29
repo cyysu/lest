@@ -91,15 +91,20 @@ int CHttpHeader::Parse(CRequest &vRequest)
 
 	// 其他数据
 	mHttpData = p;	
-	DecodePath();
+	DecodePath(mPath);
+	DecodePath(mQuery);
 	
 	return 0;
 }
 
-void CHttpHeader::DecodePath()
+void CHttpHeader::DecodePath(char *vPtr)
 {
-	char *from = mPath;
-	char *to = mPath;
+	if( vPtr == NULL )
+	{
+		return;
+	}
+	char *from = vPtr;
+	char *to = vPtr;
 	for( ; *from != '\0' ; ++to, ++from )
 	{
 		if( from[0] == '%' && isxdigit(from[1]) && isxdigit(from[2]) )

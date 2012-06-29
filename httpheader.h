@@ -25,7 +25,7 @@ class CHttpHeader
 		char *GetHttpData() { return mHttpData; }
 		EMethod ParseMethod();
 	private:
-		void DecodePath();
+		void DecodePath(char *vPtr);
 		int Hexit(char c);
 	private:
 		char *mMethod;
