@@ -1,0 +1,32 @@
+<HTML>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<TITLE>注册</TITLE>
+	</head>
+	<body>
+		
+		<H1><IMG src="icons/bird.png"> 请注册 </H1>
+		<FORM action="/cgi-bin/register.pl" method="POST">
+			<P>
+			用户类型: <BR>
+			<select name="type" size=4 multiple>
+				<OPTION selected value=1>奥特曼</OPTION>
+				<OPTION value=2>咸蛋超人</OPTION>
+				<OPTION value=3>怪兽</OPTION>
+				<OPTION value=4>炒鸡蛋</OPTION>
+				<OPTION value=5>炖蛋</OPTION>
+				<OPTION value=6>茶叶蛋</OPTION>
+				</select><BR>
+			用户名: <INPUT type="TEXT" name="name"><BR>
+			密码: <INPUT type="PASSWORD" name="password"><BR>
+			<TEXTAREA rows="10" cols="100" name="textarea">
+			</TEXTAREA>
+			</P>
+
+			<HR>
+			<INPUT type="SUBMIT" value="注册">
+			<INPUT type="RESET" value="重置">
+		</FORM>
+	</body>
+</HTML>
+
