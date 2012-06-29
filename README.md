@@ -1,4 +1,4 @@
 lest
 ====
 
-A little http server support cgi in linux.
+A little http server supports cgi in linux.
