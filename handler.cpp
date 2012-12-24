@@ -345,7 +345,7 @@ void CHandler::SendMsg(char *vBuffPtr, int vLeftLen)
 		}
 		else if( len < 0 && errno == EAGAIN )
 		{
-			usleep(100);
+			usleep(10);
 			continue;
 		}
 		else if( len < 0 )
