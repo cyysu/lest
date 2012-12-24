@@ -343,6 +343,11 @@ void CHandler::SendMsg(char *vBuffPtr, int vLeftLen)
 		{
 			continue;
 		}
+		else if( len < 0 && errno == EAGAIN )
+		{
+			usleep(100);
+			continue;
+		}
 		else if( len < 0 )
 		{
 			printf("send error: %s\n", strerror(errno));
